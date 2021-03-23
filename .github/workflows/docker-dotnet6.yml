@@ -21,4 +21,4 @@ jobs:
 
     - name: Testes
       run: |
-        ps command
+        ps aux command
