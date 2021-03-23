@@ -21,4 +21,5 @@ jobs:
 
     - name: Testes
       run: |
+        start postgresql-x64-13
         ps -aux | more
