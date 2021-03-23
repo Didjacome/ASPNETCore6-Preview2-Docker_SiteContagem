@@ -22,7 +22,6 @@ jobs:
     - name: Testes
       env:
         PGUSER: postgres
-        PGPASSWORD: root
       run: |
-        service postgresql-x64-13 start
+        psql -U root
         ps -aux | more
