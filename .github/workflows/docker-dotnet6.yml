@@ -19,6 +19,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Build de imagem e geração das tags
+    - name: Testes
       run: |
-        docker images
+        ps command
