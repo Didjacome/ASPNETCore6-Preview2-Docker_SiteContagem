@@ -21,7 +21,7 @@ jobs:
 
     - name: Testes
       env:
-        PGUSER: postgres
+        PGPASSWORD: root 
       run: |
-        psql -U root
+        psql -U postgres
         ps -aux | more
