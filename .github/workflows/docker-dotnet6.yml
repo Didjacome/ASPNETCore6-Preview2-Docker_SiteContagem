@@ -20,6 +20,9 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Testes
+      env:
+        PGPASSWORD: root
       run: |
-        service postgresql-x64-13 start
+        psql -U postgres
+        --service postgresql-x64-13 start
         ps -aux | more
