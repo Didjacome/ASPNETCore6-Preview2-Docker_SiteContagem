@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: didjacomeaspnetcorepreviewdockersitecontagem 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: didjacomeaspnetcorepreviewdockersitecontagem
+  template:
+    metadata:
+      labels:
+        app: didjacomeaspnetcorepreviewdockersitecontagem 
+    spec:
+      containers:
+        - name: didjacomeaspnetcorepreviewdockersitecontagem 
+          image: azdevopsteste.azurecr.io/didjacomeaspnetcorepreviewdockersitecontagem
+          ports:
+          - containerPort: 80
